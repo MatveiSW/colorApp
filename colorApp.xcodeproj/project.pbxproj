@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2B735D652A176BAF00019DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735D642A176BAF00019DE7 /* AppDelegate.swift */; };
 		2B735D672A176BAF00019DE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735D662A176BAF00019DE7 /* SceneDelegate.swift */; };
-		2B735D692A176BAF00019DE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735D682A176BAF00019DE7 /* ViewController.swift */; };
+		2B735D692A176BAF00019DE7 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735D682A176BAF00019DE7 /* ColorViewController.swift */; };
 		2B735D6C2A176BAF00019DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B735D6A2A176BAF00019DE7 /* Main.storyboard */; };
 		2B735D6E2A176BB000019DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B735D6D2A176BB000019DE7 /* Assets.xcassets */; };
 		2B735D712A176BB000019DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B735D6F2A176BB000019DE7 /* LaunchScreen.storyboard */; };
+		2B735D7D2A17790900019DE7 /* SetColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B735D7C2A17790800019DE7 /* SetColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B735D612A176BAF00019DE7 /* colorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B735D642A176BAF00019DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B735D662A176BAF00019DE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B735D682A176BAF00019DE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B735D682A176BAF00019DE7 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		2B735D6B2A176BAF00019DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B735D6D2A176BB000019DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B735D702A176BB000019DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B735D722A176BB000019DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B735D7C2A17790800019DE7 /* SetColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		2B735D632A176BAF00019DE7 /* colorApp */ = {
 			isa = PBXGroup;
 			children = (
-				2B735D642A176BAF00019DE7 /* AppDelegate.swift */,
-				2B735D662A176BAF00019DE7 /* SceneDelegate.swift */,
-				2B735D682A176BAF00019DE7 /* ViewController.swift */,
-				2B735D6A2A176BAF00019DE7 /* Main.storyboard */,
-				2B735D6D2A176BB000019DE7 /* Assets.xcassets */,
-				2B735D6F2A176BB000019DE7 /* LaunchScreen.storyboard */,
-				2B735D722A176BB000019DE7 /* Info.plist */,
+				2B735D782A176BC500019DE7 /* App */,
+				2B735D792A176BDB00019DE7 /* ViewControllers */,
+				2B735D7A2A176BF000019DE7 /* Storyboards */,
+				2B735D7B2A176BF700019DE7 /* Resources */,
 			);
 			path = colorApp;
+			sourceTree = "<group>";
+		};
+		2B735D782A176BC500019DE7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2B735D642A176BAF00019DE7 /* AppDelegate.swift */,
+				2B735D662A176BAF00019DE7 /* SceneDelegate.swift */,
+				2B735D722A176BB000019DE7 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2B735D792A176BDB00019DE7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B735D682A176BAF00019DE7 /* ColorViewController.swift */,
+				2B735D7C2A17790800019DE7 /* SetColorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2B735D7A2A176BF000019DE7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2B735D6A2A176BAF00019DE7 /* Main.storyboard */,
+				2B735D6F2A176BB000019DE7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B735D7B2A176BF700019DE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B735D6D2A176BB000019DE7 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B735D692A176BAF00019DE7 /* ViewController.swift in Sources */,
+				2B735D692A176BAF00019DE7 /* ColorViewController.swift in Sources */,
+				2B735D7D2A17790900019DE7 /* SetColorViewController.swift in Sources */,
 				2B735D652A176BAF00019DE7 /* AppDelegate.swift in Sources */,
 				2B735D672A176BAF00019DE7 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +325,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = URP9845Z2R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = colorApp/Info.plist;
+				INFOPLIST_FILE = colorApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = matveiSW.com.colorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +356,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = URP9845Z2R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = colorApp/Info.plist;
+				INFOPLIST_FILE = colorApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = matveiSW.com.colorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
